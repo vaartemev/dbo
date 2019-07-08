@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&display=swap');
+@import url('header/header.css');
+@import url('checkbox-list/checkbox-list.css');
+@import url('table/table.css');
+@import url('control/control.css');
+
+*{
+	outline: 0;
+	box-sizing: border-box
+}
+
+body{
+    margin: 0;
+	font-family: 'Roboto Condensed', sans-serif;
+    background: #34495E;
+}
+
+.wrapper{
+    max-width: 800px;
+    width: 100%;
+	margin: 0 auto;
+	margin-top: 100px;
+	background-color: #2c3e50;
+	border: 2px solid #005d6f;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+.content{
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.footer__info{
+    text-align: center;
+    color: #ffffff;
+}
