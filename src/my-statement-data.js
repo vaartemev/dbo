@@ -12,6 +12,12 @@ const myStatementData = [
         amount: -56.06,
     },
     {
+        _id: '5ae17f668f6e31eeccbad86g',
+        date: '2016-12-22T09:45:25',
+        type: 'Перевод',
+        amount: -156.19,
+    },
+    {
         _id: '5ae17f66c0cbe4aba08dcf4a',
         date: '2018-03-31T07:14:44',
         type: 'Перевод',

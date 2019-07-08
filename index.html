@@ -7,71 +7,54 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>ДБО</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="src/main.css">
 </head>
 
 <body>
 	<div class="wrapper">
-		<header class="page-header">
-			<h1>Моя выписка</h1>
+
+		<header class="header">
+			<h1 class="header__title">Моя выписка</h1>
 			<div class="user">
 				<div class="avatar">
-					<img src="cat.jpg" alt="">
+					<img src="src/header/avatar.jpg" alt="Аватар" class="avatar__img">
 				</div>
-				<span class="name">Владимир Артемьев</span>
+				<span class="user__name">Владимир Артемьев</span>
 			</div>
 		</header>
+
 		<main class="content">
-			<div class="checking">
-				<ul class="list-of-check">
-					<li class="check-item">
-						<input type="checkbox" checked name="date" class="checkbox">
-						<label for="lose">Дата</label>
-					</li>
-					<li class="check-item">
-						<input type="checkbox" checked name="time" class="checkbox">
-						<label for="time">Время</label>
-					</li>
-					<li class="check-item">
-						<input type="checkbox" checked name="type" class="checkbox">
-						<label for="type">Тип</label>
-					</li>
-					<li class="check-item">
-						<input type="checkbox" checked name="profit" class="checkbox">
-						<label for="profit">Приход</label>
-					</li>
-					<li class="check-item">
-						<input type="checkbox" checked name="lose" class="checkbox">
-						<label for="lose">Расход</label>
-					</li>
-				</ul>
-			</div>
-			<div class="sorter">
+			<div class="checkbox-wrap"></div>
+
+			<div class="control">
 				<div>
-					<label for="sorter">Группировка:</label>
-					<select name="sorter" id="sorter">
-						<option value="noGroup">Без группировки</option>
-						<option value="byDay">По дням</option>
+					<label class="control__title">Группировка:</label>
+					<select class="control__group">
+						<option value="group__by_default">Без группировки</option>
+						<option value="group__by_day">По дням</option>
 					</select>
 				</div>
 				<div>
-					<label for="search">Поиск:</label>
-					<input type="text" id="search">
+					<label class="control__title">Поиск:</label>
+					<input type="text" class="control__search">
 				</div>
 			</div>
+
 			<div class="table-wrap">
-				<table>
-					<thead></thead>
-					<tbody></tbody>
+				<table class="table">
+
 				</table>
 			</div>
+
 		</main>
 
+		<footer class="footer">
+			<h4 class="footer__info">© Мой банк</h4>
+		</footer>
 	</div>
-	<h4 style="text-align: center; color: #fff;">© Мой банк</h4>
 
-	<!-- <script src="src/my-statement-data.js"></script> -->
 	<script src="dist/bundle.js"></script>
+
 </body>
 
 </html>

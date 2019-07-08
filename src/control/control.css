@@ -1,0 +1,24 @@
+.control__title{
+    padding-left: 0;
+	padding-right: 10px;
+	color: #ffffff;
+}
+
+.control{
+	display: flex;
+	justify-content: space-between;
+    margin: 10px 0;
+}
+.control__group{
+    border-radius: 30px;
+    padding: 0 10px;
+    height: 30px;
+}
+
+.control__search{
+    border-radius: 30px;
+    padding: 0 10px;
+    height: 30px;
+    border: 1px solid #7fb3d2;
+    text-indent: 10px
+}
